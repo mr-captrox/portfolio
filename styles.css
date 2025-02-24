@@ -1,106 +1,46 @@
-/* General Styles */
+
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
-  color: #333;
+  background-color: #f8f9fa;
 }
 
-header {
-  text-align: center;
-  padding: 2rem;
-  background-color: #6200ea;
-  color: white;
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  z-index: 1000;
 }
 
-h1 {
-  margin: 0;
-  font-size: 2.5rem;
+.main-content {
+  margin-left: 300px;
+  padding: 20px;
 }
 
-p {
-  font-size: 1.1rem;
+.project-card {
+  transition: transform 0.3s ease;
+  height: 100%;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
-/* Card Styles */
-.card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  width: 100%;
-  max-width: 300px; /* Limits card width on larger screens */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
+.project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.card h2 {
-  margin-top: 0;
-  font-size: 1.5rem;
-  color: #6200ea;
+.tech-badge {
+  margin: 2px;
+  font-size: 0.8rem;
 }
 
-.card ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.card ul li {
-  margin: 0.5rem 0;
-}
-
-/* Footer Styles */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #333;
-  color: white;
-  margin-top: 2rem;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
+  .sidebar {
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
   }
-
-  .card {
-    max-width: 100%; /* Cards take full width on smaller screens */
-    margin: 0 1rem; /* Add some margin for better spacing */
-  }
-
-  main {
-    padding: 1rem; /* Reduce padding on smaller screens */
+  .main-content {
+      margin-left: 0;
   }
 }
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  .card {
-    padding: 1rem; /* Reduce padding for smaller screens */
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-}
-

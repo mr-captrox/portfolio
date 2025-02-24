@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your styles.css -->
+</head>
+<body>
+    <!-- Fixed Sidebar -->
+  <div class="sidebar">
+    <div class="text-center mb-4">
+        <img src="images/pic2.jpg" alt="Profile Photo" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+        <h3>Md Sourav Oyaj</h3>
+        <p class="text-muted">Web Developer</p>
+    </div>
+
+    <div class="contact-info mb-4">
+        <p><i class="bi bi-geo-alt"></i> AkbarShah,Chittagong</p>
+        <p><i class="bi bi-envelope"></i> abhimd2023@gmail.com</p>
+        <p><i class="bi bi-phone"></i> +8801601040624</p>
+    </div>
+
+    <div class="social-links">
+        <a href="#" class="btn btn-outline-dark btn-sm mb-2 w-100">
+            <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+        <a href="#" class="btn btn-outline-dark btn-sm mb-2 w-100">
+            <i class="bi bi-github"></i> GitHub
+        </a>
+        <a href="#" class="btn btn-outline-dark btn-sm mb-2 w-100">
+            <i class="bi bi-twitter"></i> Twitter
+        </a>
+    </div>
+</div>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="education.html">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="mb-4"><i class="bi bi-envelope"></i> Contact Me</h2>
+
+            <div class="row g-4">
+                <!-- Personal Information Card -->
+                <div class="col-lg-6">
+                    <div class="card card-hover shadow-sm h-100">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="bi bi-person"></i> Personal Information</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="bi bi-geo-alt"></i> <strong>Address:</strong> AkbarShah, Chittagong
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-envelope"></i> <strong>Email:</strong> abhimd2023@gmail.com
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-phone"></i> <strong>Phone:</strong> +8801601040624
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links Card -->
+                <div class="col-lg-6">
+                    <div class="card card-hover shadow-sm h-100">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="bi bi-link-45deg"></i> Social Links</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-linkedin"></i> LinkedIn
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-github"></i> GitHub
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-twitter"></i> Twitter
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="col-lg-12">
+                    <div class="card card-hover shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="bi bi-send"></i> Send Me a Message</h3>
+                            <form action="https://formspree.io/f/xanqgyov" method="POST">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-send"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
