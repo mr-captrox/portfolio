@@ -44,3 +44,98 @@ body {
       margin-left: 0;
   }
 }
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Apply animation to cards */
+.card {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Button hover effect */
+.btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Card hover effect */
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .sidebar {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+body.dark-mode .navbar-dark {
+  background-color: #1e1e1e !important;
+}
+
+body.dark-mode .btn-outline-dark {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+body.dark-mode .btn-outline-dark:hover {
+  background-color: #ffffff;
+  color: #121212;
+}
+/* For list group items in dark mode */
+.dark-mode .list-group-item {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #4a4a4a !important;
+}
+
+/* For list group headings */
+.dark-mode .list-group {
+  background-color: transparent !important;
+}
+
+/* Scroll animation */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  animation: slideUp 0.5s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.parallax {
+  background-image: url('path/to/your/image.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
